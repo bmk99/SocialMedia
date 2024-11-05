@@ -1,0 +1,76 @@
+/* Define CSS variables */
+:root {
+    --messages-width: 350px; /* Adjust width as needed */
+    /* --messages-max-height: 300px; Adjust height as needed */
+    --background-color-other: #f0f0f0; /* Background color for others' messages */
+    --text-color-other: #000; /* Text color for others' messages */
+    --background-color-own: #f0f0f0; /* Background color for own messages */
+    --text-color-own: #000; /* Text color for own messages */
+  }
+  
+  /* Messages container */
+  .messages {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: flex-start;
+    max-width: 90vw; /* Set maximum width to 90% of the viewport width */
+  }
+  
+  /* Messages top section */
+  .messages_top {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* Messages image */
+  .messages_image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Messages text */
+  .messages_text {
+    font-size: 15px;
+    width: var(--messages-width);
+    /* max-height: var(--messages-max-height); */
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    background-color: var(--background-color-other);
+    color: var(--text-color-other);
+    max-width: calc(
+      100% - 20px
+    ); /* Set maximum width to 100% of the container width minus padding */
+  }
+  
+  /* Messages bottom section */
+  .messages_bottom {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+  
+  .messages.own {
+    align-items: flex-end;
+  }
+  /* Own messages */
+  .messages.own .messages_text {
+    background-color: var(--background-color-own);
+    color: var(--text-color-own);
+  }
+  
+  /* Hide scrollbar */
+  .messages_text::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
+  }
+  
+  /* Hide scrollbar in Firefox */
+  .messages_text {
+    scrollbar-width: none;
+  }
+
+  

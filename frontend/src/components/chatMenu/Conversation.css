@@ -1,0 +1,46 @@
+/* .conversations{
+display: flex;
+margin: 10px;
+align-items: center;
+padding: 10px;
+}
+.conversation_name{
+    font-weight: 500;
+}
+
+.conversation_image{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 25px;
+
+} */
+
+.chatOnline_wrap{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+
+    align-items: center;
+    font-weight: 500;
+}
+.chatOnline_image_container{
+    position: relative;
+}
+.chatOnline_image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+        /* position: absolute; */
+}
+.chatOnline_badge{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

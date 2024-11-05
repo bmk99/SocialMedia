@@ -1,0 +1,24 @@
+.chatOnline_wrap{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.chatOnline_image_container{
+    position: relative;
+}
+.chatOnline_image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+        /* position: absolute; */
+}
+.chatOnline_badge{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
